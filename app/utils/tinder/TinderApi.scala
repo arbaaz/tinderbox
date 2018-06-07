@@ -43,8 +43,7 @@ class TinderApi(
    * Headers for a Tinder API Request
    */
   val STANDARD_HEADERS: Seq[(String, String)] = Seq(
-    ("User-Agent", "Tinder Android Version 2.2.3"),
-    ("os_version", "16"),
+    ("User-Agent", "Tinder/4.0.9 (iPhone; iOS 8.1.1; Scale/2.00)"),
     ("Content-type", "application/json")
   )
   def tinderHeaders = xAuthToken match {

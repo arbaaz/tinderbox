@@ -4,7 +4,6 @@ import scala.annotation.meta.field
 import com.fasterxml.jackson.annotation._
 import com.fasterxml.jackson.databind.annotation._
 
-
 /**
  * Represents a single user in a recommendation queue.
  * @param _id
@@ -42,8 +41,8 @@ case class RecommendedUser(
   @(JsonProperty@field)("common_like_count")
   val common_like_count: Int,
 
-  @(JsonProperty@field)("common_likes")
-  val common_likes: List[String],
+  // @(JsonProperty@field)("common_likes")
+  // val common_likes: List[String],
 
   @(JsonProperty@field)("distance_mi")
   val distance_mi: Int,
