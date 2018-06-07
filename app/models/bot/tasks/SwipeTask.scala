@@ -95,6 +95,7 @@ class SwipeTask(val xAuthToken: String, val tinderBot: ActorRef, val rec: Recomm
 
   def receive = {
     case "tick" =>
+      println("swipe task tick" + rec._id)
       if(!rec._id.startsWith("tinder_rate_limited")) {
         // some initial criteria
         val day = 86400000L
